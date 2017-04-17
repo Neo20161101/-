@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
+    <title>详情页</title>
+</head>
+<body style="background: #fff;">
+<header>
+    <div class="header">
+        <div>
+            <a href="index.html">首页</a>
+        </div>
+        <div>
+            <a href="list.html">列表页</a>
+        </div>
+        <div>
+            <a href="footer.html">底部</a>
+        </div>
+    </div>
+    <style>
+        .header{
+            position: fixed;
+            left: 15px;
+            top:50%;
+            width:100px;
+            background: #fff;
+            z-index:300000;
+        }
+
+        .pull-right {
+            text-align: left;
+
+        }
+
+        .pull-right.left {
+            width: 200px;
+
+        }</style>
+</header>
+<header style="background: #fff;">
+    <div class="container min-width">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 doc-padding">
+                <div class="pull-right hidden-xs">
+                    <ul class="navbar-nav header_title">
+                        <li>您好，请登录</li>
+                        <li><a href="#">免费注册</a>
+                        </li>
+                        <li><a href="#" class="cart">购物车</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">客服热线：400-8560-616</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 doc-padding">
+                <nav class="navbar">
+                    <div class="">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" id="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="img/logo2.png"/></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="navbar-collapse bg_Black"></div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav">
+                                <li><a href="" class="a">首页</a></li>
+                                <li><a href="" class="a">家具城</a></li>
+                                <li><a href="" class="a">买家秀</a></li>
+                                <li><a href="" class="a">智能家居</a></li>
+                                <li><a href="" class="a">海外代购</a></li>
+                                <li><a href="" class="a">装修攻略</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">装修网<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">招包工头</a></li>
+                                        <li><a href="#">找装修公司</a></li>
+                                        <li><a href="#">找射击师</a></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li  class="decoration">-->
+                                <!--<a href="#"  class="a"  id="decoration">装修网<img src="img/icon-23-bg.png" alt="" /></a>-->
+                                <!--<ul class="nav-decoration">-->
+                                <!--<li><a href="">找包工头</a></li>-->
+                                <!--<li><a href="">找装修公司</a></li>-->
+                                <!--<li><a href="">找射鸡屎</a></li>-->
+                                <!--<li><a href="">找包工头</a></li>-->
+                                <!--</ul>-->
+                                <!--</li>-->
+                            </ul>
+                            <button type="button" id="close">&nbsp;&nbsp;</button>
+                            <ul class="visible-xs-block">
+                                <li><hr /></li>
+                                <li>您好，请登录</li>
+                                <li><a href="#">免费注册</a></li>
+                                <li><a href="#" class="cart">购物车</a></li>
+                                <li><a href="#">客服热线：400-8560-616</a></li>
+                            </ul>
+                        </div>
+                        <!-- search -->
+                        <div class="search">
+                            <form action="" class="search-form">
+                                <div class="form-group has-feedback">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="search" class="form-control" name="search" id="search" placeholder="search">
+                                    <span class="Search-Information form-control-feedback"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container-fluid"style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 hidden-xs padding-right">
+                    <ol class="breadcrumb list_breadcrumb-navigation">
+                        <li>当前位置：</li>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">家具城</a></li>
+                        <li><a href="#">客厅</a></li>
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">布艺沙发</a></li>
+                        <li class="active">三人位沙发 贵族尊享 精美多色可选花布 亲肤透气 豪华精美三人位沙发</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <img src="img/images/3PCfdj_03.jpg" alt="" style="margin-top: 20px;">
+                <div class="experience hidden-xs">
+                    <div class="title">温州<span>2</span>家体验店 <a href="#">查看其它体验店地址</a></div>
+                    <div class="position">
+                        <div class="pull-left"><img src="img/images/3PCaddress_img_03.jpg" alt=""></div>
+                        <div class="pull-right"style="width: 185px;">
+                            <div class="a">一家一居瓯北体验中心</div>
+                            <div class="b">五星工业区裕泰工业园</div>
+                            <div class="c"><a href="#">免费获取体验店地址</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                <div class="detailed-text">
+                    <div class="title">【简约美式】 三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气 豪华精美三人位沙发</div>
+                    <div class="half-title">优质亚麻布料，静静聆听人生絮语，轻抚岁月脚步，感悟属于自己的完美空间。（另有1.5米床可选）</div>
+                    <div class="clearfix jg-price"><span class="pull-left"><span class="price">价格：<span>6085.00 </span></span><span>限时折扣</span><span>红包抵扣</span><span>满减</span></span><span class="pull-right">据结束 <span>01</span>:<span>01</span>:<span>01</span></span>
+                    </div>
+                    <div class="original-price">原价：<del>7085.00</del></div>
+                    <div><hr></div>
+                    <div class="coupon"><span class="a">店铺红包</span>50元店铺优惠券</div>
+                    <div><hr></div>
+                    <div class="coupon"><span class="a">满减</span>全场购物满30000立减500</div>
+                    <div><hr></div>
+                    <dl>
+                        <dt>商品编号</dt>
+                        <dd>BYSF-4375-CLD-1</dd>
+                    </dl>
+                    <dl>
+                        <dt>产品类型</dt>
+                        <dd><a href="#" class="b active">三人位</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>产品颜色</dt>
+                        <dd><a href="#" class="b">米黄色</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>产品尺寸</dt>
+                        <dd><a href="#" class="b">2250*990*900(mm)</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>运费</dt>
+                        <dd>配送至 <a href="#">浙江省温州市鹿城区</a> <a href="#">查看运费</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>数量</dt>
+                        <dd class="cut"><a href="#">&horbar;</a> <input type="text" value="1" > <a href="#">+</a>&nbsp;&nbsp;&nbsp;&nbsp;库存：2</dd>
+                    </dl>
+                    <div class="Buy-now"><a href="#">爱心</a> <button type="button" class="cart">加入购物车</button> <button type="button" class="buying">立即购买</button></div>
+                </div>
+            </div>
+            <div class="col-lg-2 visible-lg-block">
+                <div class="Browsing">
+                    <ul>
+                        <li style="font-size: 0.75em;color: #8c8c8c;text-align: center;margin-top: 20px;">浏览记录</li>
+                        <li>
+                            <img src="img/images/3PCrecorder_06.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PCrecorder_06.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PCrecorder_06.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 visible-lg-block">
+                <div id="cen_right_top">
+                    <h3 class="active">人气搭配</h3>
+                    <h3>推荐搭配</h3>
+                    <div style="display:block;">
+                        <ul class="navbar-nav recommend">
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav"><li style="color: #8c8c8c;font-size: 4em;margin: 15px 15px 0 0;">+</li></ul>
+                        <ul class="navbar-nav recommend">
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                        </ul>
+                        <ul class="recommend2">
+                            <li class="title">商品搭配总价</li>
+                            <li class="price">&yen; 8080.00</li>
+                            <li class="button"><button type="button">加入购物车</button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav recommend">
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav"><li style="color: #8c8c8c;font-size: 4em;margin: 15px 15px 0 0;">+</li></ul>
+                        <ul class="navbar-nav recommend">
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                            <li>
+                                <img src="img/images/3PCrecorder_06.jpg" alt="">
+                                <span class="price">&yen: 6085</span>
+                                <label class="check"><input type="checkbox">布艺床时尚简约铆钉装饰高屏床屏</label>
+                            </li>
+                        </ul>
+                        <ul class="recommend2">
+                            <li class="title">商品搭配总价</li>
+                            <li class="price">&yen; 8080.00</li>
+                            <li class="button"><button type="button">加入购物车</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <hr>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 doc-padding visible-lg-block">
+                <div class="cn-like">
+                    猜你喜欢
+                </div>
+                <div class="Browsing">
+                    <ul>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                        <li>
+                            <img src="img/images/3PClike_03.jpg" alt="">
+                            <div class="price"><i>&yen;</i> 6058</div>
+                            <div class="text">实木床 贵族优选 优质进口</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title a">客厅家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title b">卧室家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title c">餐厅家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title d">书房家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title e">儿童房家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <div class="title f">玄关家具</div>
+                    <ul class="navbar-nav text-center">
+                        <li><a href="#">沙发</a></li>
+                        <li><a href="#">沙发凳/脚踏</a></li>
+                        <li><a href="#">椅子</a></li>
+                        <li><a href="#">凳子</a></li>
+                        <li><a href="#">电视柜</a></li>
+                        <li><a href="#">茶几</a></li>
+                        <li><a href="#">角几/边几</a></li>
+                        <li><a href="#">屏风</a></li>
+                        <li><a href="#">花架</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs text-center" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">商品详情</a></li>
+                        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">商品评论</a></li>
+                        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">已售(210)</a></li>
+                        <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">售后服务</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <ul class="navbar-nav detailed-content">
+                                <li>商品名称：现货特价 儿童房套餐 海底童话 1.2米</li>
+                                <li>商品编码：ETTC-3859-MJ-KLM</li>
+                                <li>上架时间：2016-07-02</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                            </ul>
+                            <div><hr></div>
+                            <img src="img/images/details.jpg" alt="">
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div>&nbsp;</div>
+                            <div class="detailed-comment">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <a class="avatar"><img src="img/images/4PCshow_03.jpg" alt=""><span class="name">和气生财</span></a>
+                                        <span class="time">2016-03-21 10:55:00</span>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="icon-star icon-star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="detailed-comment2">
+                                    <div class="content">在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。萨达sadadadada在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。<a href="#">详细</a></div>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="detailed-comment">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <a class="avatar"><img src="img/images/4PCshow_03.jpg" alt=""><span class="name">和气生财</span></a>
+                                        <span class="time">2016-03-21 10:55:00</span>
+                                    </div>
+                                    <div class="pull-right">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="detailed-comment2">
+                                    <div>在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。萨达sadadadada在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。<a
+                                            href="#">详细</a></div>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="detailed-comment">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <a class="avatar"><img src="img/images/4PCshow_03.jpg" alt=""><span class="name">和气生财</span></a>
+                                        <span class="time">2016-03-21 10:55:00</span>
+                                    </div>
+                                    <div class="pull-right">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="detailed-comment2">
+                                    <div>在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。萨达sadadadada在体验馆一眼就看中的商品，坐着很舒服，正好有活动毫不犹豫就下单了。<a
+                                            href="#">详细</a></div>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                    <a href="#"><img src="img/images/3PClike_03.jpg" alt=""></a>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div>&nbsp;</div>
+                            <table class="Sold">
+                                <tr>
+                                    <td>买家</td>
+                                    <th>商品信息</th>
+                                    <td>数量</td>
+                                    <td>成交时间</td>
+                                </tr>
+                                <tr>
+                                    <td>王青洲</td>
+                                    <th>【简约美式】三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气豪华...</th>
+                                    <td>1</td>
+                                    <td>2016-10-18<br>15:52:33</td>
+                                </tr>
+                                <tr>
+                                    <td>王青洲</td>
+                                    <th>【简约美式】三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气豪华...</th>
+                                    <td>1</td>
+                                    <td>2016-10-18<br>15:52:33</td>
+                                </tr>
+                                <tr>
+                                    <td>王青洲</td>
+                                    <th>【简约美式】三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气豪华...</th>
+                                    <td>1</td>
+                                    <td>2016-10-18<br>15:52:33</td>
+                                </tr>
+                                <tr>
+                                    <td>王青洲</td>
+                                    <th>【简约美式】三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气豪华...</th>
+                                    <td>1</td>
+                                    <td>2016-10-18<br>15:52:33</td>
+                                </tr>
+                                <tr>
+                                    <td>王青洲</td>
+                                    <th>【简约美式】三人位沙发 贵族尊享 全实木框架 精美多色可选花布亲肤透气豪华...</th>
+                                    <td>1</td>
+                                    <td>2016-10-18<br>15:52:33</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <div>&nbsp;</div>
+                            <div class="Service">
+                                <dl>
+                                    <dt>退货和流程：</dt>
+                                    <dd>收到货10天内，确定因质量问题，将为您提供免费退换货服务；非质量问题引起的退换货时客户应承担总价30%的货物重新包装和往返生产地运输费用。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商品保修：</dt>
+                                    <dd>家居类商品的保修期限为三年。建材类：陶制品和木质类制品保修三年，灯具类、墙纸类、五金类制品保修一年。凡在我们网站购买商品的客户，将自动成为我们的VIP客户，我们承诺为您的家具提供终身维护。</dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

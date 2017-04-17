@@ -1,0 +1,85 @@
+.footer-title a{
+	font-size: 1.125em;
+	display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding-left: 34px;
+}
+
+.footer-title .icon_a{
+	background: url(../img/icon-3.png) no-repeat 0px center;
+    background-size: 20%;
+}
+.footer-title .icon_b{
+	background: url(../img/icon-4.png) no-repeat 0px center;
+    background-size: 20%;
+}
+.footer-title .icon_c{
+	background: url(../img/icon-5.png) no-repeat 0px center;
+    background-size: 20%;
+}
+.footer-title .icon_d{
+	background: url(../img/icon-6.png) no-repeat 0px center;
+    background-size: 20%;
+}
+.footer-title .b{
+	color: #acacac;
+	font-size: 0.84375em;
+}
+.footer-logo{
+	text-align: center;
+	margin-top: 17px;
+}
+.About{
+	margin-top: 40px;
+}
+.About li a{
+	font-size: 0.875em;
+	padding: 0 10px 0 0;
+}
+.contact .phone{
+	font-size: 1.875em;
+	color: #2f318b;
+	text-align: right;
+}
+.contact .time{
+	font-size: 0.875em;
+	color: #282828;
+	text-align: right;
+}
+.footer_hr hr{
+	border: 1px solid #D2D2D2;
+	margin: 0;
+}
+.footer_link{
+	font-size: 0.875em;
+	color: #999999;
+}
+.footer_link li{
+	margin-right: 10px;
+}
+.footer_link a{
+	font-size: 0.875em;
+	color: #999999;
+}
+.footer_record{
+	font-size: 0.875em;
+	color: #999999;
+	margin-top: 20px;
+	text-align: center;
+}
+.footer_record_icon{
+	text-align: center;
+}
+.time .icon_a{
+	background: url(../img/icon-11.png) no-repeat 0px center;
+	padding-left: 15px;
+}
+.time .icon_b{
+	background: url(../img/icon-494.png) no-repeat 0px center;
+	padding-left: 15px;
+}
+.time .icon_c{
+	background: url(../img/icon-8.png) no-repeat 0px center;
+	padding-left: 15px;
+}
